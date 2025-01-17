@@ -8,3 +8,5 @@ const val REPORT_SERVICE_URI = "http://localhost:8081"
 const val TAX_SERVICE_ROOT_PATH = "api/tax"
 const val TAX_SERVICE_PATH = "api/tax/**"
 const val TAX_SERVICE_URI = "http://localhost:8082"
+
+const val HEADER_ROLES = "User-Roles"

@@ -25,6 +25,8 @@ class RoutingTest {
         assertFalse(makeRequest("/api/do/not/exist").contains(":8080"));
     }
 
+
+
     private fun makeRequest(path: String): String {
         val client = WebTestClient.bindToApplicationContext(context).build()
         return client.get().uri(path).exchange().returnResult(String::class.java).toString()
